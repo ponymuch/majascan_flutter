@@ -47,6 +47,7 @@ class ScanInteractorImpl(private val mCallback: ScanCallbackInterface?) : ScanIn
                 return Rect(0, 0, previewWidth, previewHeight)
             }
         }
+        mZXingScannerView!!.setFormats(listOf(BarcodeFormat.QR_CODE))
         mZXingScannerView!!.setResultHandler(this)
         previewContainer.addView(mZXingScannerView)
     }
