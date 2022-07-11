@@ -1,3 +1,5 @@
+## 0.5.2
+* fix import error
 ## 0.5.1
 * andorid qr restrictions
 ## 0.5.0
