@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:flutter/services.dart';
-import 'package:majascan/majascan.dart';
+// import 'package:majascan/majascan.dart';
 
 void main() => runApp(MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -20,34 +20,34 @@ class HomePageState extends State<HomePage> {
   String result = "Hey there !";
 
   Future _scanQR() async {
-    try {
-      String? qrResult = await MajaScan.startScan(
-          title: "QRcode scanner",
-          titleColor: Colors.amberAccent[700],
-          qRCornerColor: Colors.orange,
-          qRScannerColor: Colors.orange);
-      setState(() {
-        result = qrResult ?? 'null string';
-      });
-    } on PlatformException catch (ex) {
-      if (ex.code == MajaScan.CameraAccessDenied) {
-        setState(() {
-          result = "Camera permission was denied";
-        });
-      } else {
-        setState(() {
-          result = "Unknown Error $ex";
-        });
-      }
-    } on FormatException {
-      setState(() {
-        result = "You pressed the back button before scanning anything";
-      });
-    } catch (ex) {
-      setState(() {
-        result = "Unknown Error $ex";
-      });
-    }
+    // try {
+    //   String? qrResult = await MajaScan.startScan(
+    //       title: "QRcode scanner",
+    //       titleColor: Colors.amberAccent[700],
+    //       qRCornerColor: Colors.orange,
+    //       qRScannerColor: Colors.orange);
+    //   setState(() {
+    //     result = qrResult ?? 'null string';
+    //   });
+    // } on PlatformException catch (ex) {
+    //   if (ex.code == MajaScan.CameraAccessDenied) {
+    //     setState(() {
+    //       result = "Camera permission was denied";
+    //     });
+    //   } else {
+    //     setState(() {
+    //       result = "Unknown Error $ex";
+    //     });
+    //   }
+    // } on FormatException {
+    //   setState(() {
+    //     result = "You pressed the back button before scanning anything";
+    //   });
+    // } catch (ex) {
+    //   setState(() {
+    //     result = "Unknown Error $ex";
+    //   });
+    // }
   }
 
   @override

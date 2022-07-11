@@ -1,3 +1,5 @@
+## 0.5.1
+* andorid qr restrictions
 ## 0.5.0
 * null-safety
 ## 0.3.8
