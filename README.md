@@ -7,6 +7,12 @@ Using method channel open native camera page scan qr code.
   <img src="https://media.giphy.com/media/XB4I4hCGGASWQGCHeu/giphy.gif">  
 </p>  
 
+## Publish
+
+export http_proxy=http://127.0.0.1:1087;export https_proxy=http://127.0.0.1:1087;
+
+flutter packages pub publish --server=https://pub.dartlang.org 
+
 ## Installation  
   
 ### 1. Depend on it  

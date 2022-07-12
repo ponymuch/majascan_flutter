@@ -1,3 +1,5 @@
+## 0.5.3
+* fix ios pod error
 ## 0.5.2
 * fix import error
 ## 0.5.1
