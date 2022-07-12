@@ -1,6 +1,6 @@
 name: majascan_qr
 description: A qr code scanner flutter plugin project. Using method channel open native camera page scan QR code. Support iOS, Android.
-version: 0.5.3
+version: 0.5.4
 homepage: https://github.com/ponymuch/majascan_flutter
 
 environment:

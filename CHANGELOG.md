@@ -1,3 +1,5 @@
+## 0.5.4
+* fix ios image show
 ## 0.5.3
 * fix ios pod error
 ## 0.5.2
