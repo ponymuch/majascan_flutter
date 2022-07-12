@@ -32,15 +32,14 @@ public class SwiftMajascanPlugin: NSObject, FlutterPlugin {
             }
     
             if hostViewController != nil {
-                let backIconKey = registrar.lookupKey(forAsset: "assets/back.png", fromPackage: "majascan")
+                let backIconKey = registrar.lookupKey(forAsset: "assets/back.png", fromPackage: "majascan_qr")
                 if let backIconPath = Bundle.main.path(forResource: backIconKey, ofType: nil) {
                     scanController.backImage = UIImage(imageLiteralResourceName: backIconPath)
                 }
-                let flashlightKey = registrar.lookupKey(forAsset: "assets/flashlight.png", fromPackage: "majascan")
+                let flashlightKey = registrar.lookupKey(forAsset: "assets/flashlight.png", fromPackage: "majascan_qr")
                 if let flashlightPath = Bundle.main.path(forResource: flashlightKey, ofType: nil) {
                     scanController.flashlightImage = UIImage(imageLiteralResourceName: flashlightPath)
                 }
-                
                 hostViewController.present(navigationController, animated: true, completion: nil)
             }
         default:
